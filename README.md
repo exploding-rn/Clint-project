@@ -24,6 +24,7 @@ CLINT is also the name of the first model developed under this project — a fin
 | **Tailscale** | Private mesh network across all devices |
 | **Unsloth** | Model fine-tuning framework |
 | **LLama3.2, Minstral, Granite, and Gemma3** | Base model for CLINT fine-tune |
+| **n8n** | Automations |
 
 ---
 ## 🖥️ Services & Ports
