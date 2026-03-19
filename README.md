@@ -29,13 +29,14 @@ CLINT is also the name of the first model developed under this project — a fin
 ## 🖥️ Services & Ports
 | Service | Port | Host |
 |---|---|---|
-| Open WebUI | 3000 | Main PC |
-| SearXNG | 7846 | Main PC |
-| Kokoro TTS | 8880 | Main PC |
+| Open WebUI | 3000 | Docker Main PC |
+| SearXNG | 7846 | Docker Main PC |
+| Kokoro TTS | 8880 | Docker Main PC |
 | Pi-hole | 8888 | Raspberry Pi 5 |
 | Nginx Proxy Manager | 81 | Raspberry Pi 5 |
 | Homarr Dashboard | 7575 | Raspberry Pi 5 |
 | Gotify | 8070 | Raspberry Pi 5 |
+| n8n | 5678 | Docker Main PC |
 
 ---
 ## 🤖 CLINT Model — v0.1
