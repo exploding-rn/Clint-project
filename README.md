@@ -23,7 +23,7 @@ CLINT is also the name of the first model developed under this project — a fin
 | **Raspberry Pi 5** | Always-on services (Pi-hole, Tailscale, Nginx, etc.) |
 | **Tailscale** | Private mesh network across all devices |
 | **Unsloth** | Model fine-tuning framework |
-| **Gemma3 9B** | Base model for CLINT fine-tune |
+| **LLama3.2, Minstral, Granite, and Gemma3** | Base model for CLINT fine-tune |
 
 ---
 ## 🖥️ Services & Ports
@@ -46,7 +46,7 @@ First custom model trained under the CLINT Industries project.
 | **Base model** | Gemma3 9B |
 | **Training method** | QLoRA fine-tune via Unsloth |
 | **Dataset size** | 1137 examples |
-| **Dataset sources** | Claude Sonnet (137), Gemma3 4B (250), Ministral 14B (200), Granite Code 8B (200), Granite3.3 8B (200), Llama 3.2 3B (100) |
+| **Dataset sources** | Claude Sonnet (137), Gemma3 4B (250), Ministral 14B (200), Granite Code 8B (200), Granite3.3 8B (200), Llama 3.2 3B (150) |
 | **Specializations** | General reasoning, vision, long context |
 | **Hardware** | RTX 3080 10GB + Ryzen 9 9950X3D + 32GB RAM |
 | **Status** | Training in progress |
@@ -58,7 +58,7 @@ First custom model trained under the CLINT Industries project.
 - Added Ollama integration with OWUI
 
 ### February 2026
-- Nothing (we don't talk about February)
+- Nothing (we don't talk about February) I didnt do anything in febuary
 
 ### March 2026
 - Added Google Gemini free tier API
@@ -77,27 +77,14 @@ First custom model trained under the CLINT Industries project.
 - [ ] Finish CLINT v0.1 fine-tune and push to Ollama
 - [ ] Hook voice clone into OWUI
 - [ ] RAG pipeline — vector DB (Qdrant) pointed at Obsidian vault
-- [ ] K3s multi-node cluster across 3 machines
-- [ ] Pipelines-based Obsidian note writing function
-- [ ] Stable Diffusion / local image generation
-- [ ] Full Kubernetes migration
+- [✅]Pipelines-based Obsidian note writing function
+- [✅] Stable Diffusion / local image generation
 - [ ] CLINT v0.2 — larger dataset with more Claude gold standard examples
-- [ ] Push CLINT model to HuggingFace
+- [ ] Push CLINT model to HuggingFace/Ollama
 
----
-## 📁 Repo Structure
-```
-CLINT/
-├── docker/          # Docker compose files per service
-├── configs/         # Service configs (SearXNG, OWUI, etc.)
-├── scripts/         # Automation & setup scripts
-├── pi/              # Raspberry Pi specific configs
-├── training/        # Model training scripts and datasets
-└── README.md
-```
 ---
 ## 📜 License
 Apache 2.0 License (same as MIT but adds Patent Protection)
 
 ---
-*Built by Keller — 13 y/o home lab enthusiast & founder of CLINT Industries*
+*Built by Keller — 13 y/o home lab enthusiast & founder of CLINT AI Models*
