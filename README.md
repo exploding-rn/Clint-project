@@ -1,20 +1,16 @@
-# OPNIX 
-### OWUI · Ollama · Anthropic · Google Gemini · Kubernetes · K3s · Obsidian Infrastructure Project
-
-> Personal self-hosted AI infrastructure — my living AI portfolio.
-
+# CLINT
+### Creative Lined Intuitive Neural Technology
+#### OWUI · Ollama · Anthropic · Google Gemini · Custom Model Training · Obsidian Infrastructure Project
+> Personal self-hosted AI infrastructure and model development — my living AI portfolio.
 *Repo created 3/15/2026 — project maintained since 1/25/2026*
+---
+## 🧠 What is CLINT?
+CLINT (Creative Lined Intuitive Neural Technology) is my personal self-hosted AI stack and model development project. The goal is a fully private, locally-run AI environment with no reliance on big tech — integrating local models, cloud APIs, voice, knowledge management, and custom trained models built from scratch.
+
+CLINT is also the name of the first model developed under this project — a fine-tuned Gemma3 9B trained on a 1137-example distillation dataset generated from Claude, Gemma, Ministral, Granite, and Llama models.
 
 ---
-
-## 🧠 What is OPNIX?
-
-OPNIX is my personal self-hosted AI stack. The goal is a fully private, locally-run AI environment with no reliance on big tech — integrating local models, cloud APIs, voice, knowledge management, and eventually a multi-node Kubernetes cluster.
-
----
-
 ## 📦 Stack
-
 | Component | What it does |
 |---|---|
 | **Open WebUI (OWUI)** | Main AI chat interface |
@@ -26,25 +22,37 @@ OPNIX is my personal self-hosted AI stack. The goal is a fully private, locally-
 | **Kokoro TTS** | Text-to-speech with custom voice clone |
 | **Raspberry Pi 5** | Always-on services (Pi-hole, Tailscale, Nginx, etc.) |
 | **Tailscale** | Private mesh network across all devices |
+| **Unsloth** | Model fine-tuning framework |
+| **Gemma3 9B** | Base model for CLINT fine-tune |
 
 ---
-
 ## 🖥️ Services & Ports
-
 | Service | Port | Host |
 |---|---|---|
 | Open WebUI | 3000 | Main PC |
 | SearXNG | 7846 | Main PC |
 | Kokoro TTS | 8880 | Main PC |
 | Pi-hole | 8888 | Raspberry Pi 5 |
-| Nginx Proxy Manager | — | Raspberry Pi 5 |
-| Homarr Dashboard | — | Raspberry Pi 5 |
-| Gotify | — | Raspberry Pi 5 |
+| Nginx Proxy Manager | 81 | Raspberry Pi 5 |
+| Homarr Dashboard | 7575 | Raspberry Pi 5 |
+| Gotify | 8070 | Raspberry Pi 5 |
 
 ---
+## 🤖 CLINT Model — v0.1
+First custom model trained under the CLINT Industries project.
 
+| Property | Value |
+|---|---|
+| **Base model** | Gemma3 9B |
+| **Training method** | QLoRA fine-tune via Unsloth |
+| **Dataset size** | 1137 examples |
+| **Dataset sources** | Claude Sonnet (137), Gemma3 4B (250), Ministral 14B (200), Granite Code 8B (200), Granite3.3 8B (200), Llama 3.2 3B (100) |
+| **Specializations** | General reasoning, vision, long context |
+| **Hardware** | RTX 3080 10GB + Ryzen 9 9950X3D + 32GB RAM |
+| **Status** | Training in progress |
+
+---
 ## 📅 Changelog
-
 ### January 2026
 - Added Open WebUI
 - Added Ollama integration with OWUI
@@ -59,37 +67,37 @@ OPNIX is my personal self-hosted AI stack. The goal is a fully private, locally-
 - Built local voice clone (not yet hooked into OWUI)
 - Added SearXNG private search on port 7846
 - Created GitHub repo
+- Rebranded from OPNIX to CLINT Industries
+- Built multi-model training data pipeline (5 models + Claude API)
+- Generated 1137-example distillation dataset for CLINT v0.1
+- Fine-tuning Gemma3 9B as first CLINT model
 
 ---
-
 ## 🗺️ Roadmap
-
+- [ ] Finish CLINT v0.1 fine-tune and push to Ollama
 - [ ] Hook voice clone into OWUI
 - [ ] RAG pipeline — vector DB (Qdrant) pointed at Obsidian vault
 - [ ] K3s multi-node cluster across 3 machines
 - [ ] Pipelines-based Obsidian note writing function
 - [ ] Stable Diffusion / local image generation
 - [ ] Full Kubernetes migration
+- [ ] CLINT v0.2 — larger dataset with more Claude gold standard examples
+- [ ] Push CLINT model to HuggingFace
 
 ---
-
 ## 📁 Repo Structure
-
 ```
-OPNIX/
+CLINT/
 ├── docker/          # Docker compose files per service
 ├── configs/         # Service configs (SearXNG, OWUI, etc.)
 ├── scripts/         # Automation & setup scripts
 ├── pi/              # Raspberry Pi specific configs
+├── training/        # Model training scripts and datasets
 └── README.md
 ```
-
 ---
-
 ## 📜 License
-
-APCAHE 2.0 licesne (same as MIT but addes Patent Protection)
+Apache 2.0 License (same as MIT but adds Patent Protection)
 
 ---
-
-*Built by Keller — 13 y/o home lab enthusiast*
+*Built by Keller — 13 y/o home lab enthusiast & founder of CLINT Industries*
