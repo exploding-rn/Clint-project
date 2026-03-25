@@ -48,7 +48,7 @@ First custom model trained under the CLINT Industries project.
 |---|---|
 | **Base model** | Gemma3 9B |
 | **Training method** | QLoRA fine-tune via Unsloth |
-| **Dataset size** | 1137 examples |
+| **Dataset size** | 1252 examples |
 | **Dataset sources** | Claude Sonnet (137), Gemma3 4B (250), Ministral 14B (200), Granite Code 8B (200), Granite3.3 8B (200), Llama 3.2 3B (150) |
 | **Specializations** | General reasoning, vision, long context |
 | **Hardware** | RTX 3080 10GB + Ryzen 9 9950X3D + 32GB RAM |
