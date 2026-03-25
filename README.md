@@ -1,6 +1,6 @@
 # CLINT
 ### Creative Lined Intuitive Neural Technology
-#### OWUI · Ollama · Anthropic · Google Gemini · Custom Model Training · Obsidian Infrastructure Project
+#### OWUI · Ollama · Anthropic · Google Gemini · Custom Model Training · Obsidian Infrastructure Project · Llama.cpp
 > Personal self-hosted AI infrastructure and model development — my living AI portfolio.
 *Repo created 3/15/2026 — project maintained since 1/25/2026*
 ---
@@ -25,6 +25,7 @@ CLINT is also the name of the first model developed under this project — a fin
 | **Unsloth** | Model fine-tuning framework |
 | **LLama3.2, Minstral, Granite, and Gemma3** | Base model for CLINT fine-tune |
 | **n8n** | Automations |
+|**llama.cpp| More Local Models|
 
 ---
 ## 🖥️ Services & Ports
@@ -73,6 +74,7 @@ First custom model trained under the CLINT Industries project.
 - Built multi-model training data pipeline (5 models + Claude API)
 - Generated 1137-example distillation dataset for CLINT v0.1
 - Fine-tuning Gemma3 9B as first CLINT model
+- added llama.cpp
 
 ---
 ## 🗺️ Roadmap
@@ -82,7 +84,6 @@ First custom model trained under the CLINT Industries project.
 - [✅]Pipelines-based Obsidian note writing function
 - [✅] Stable Diffusion / local image generation
 - [ ] CLINT v0.2 — larger dataset with more Claude gold standard examples
-- [ ] Push CLINT model to HuggingFace/Ollama
 
 ---
 ## 📜 License
